@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+   
+
+}
+
+
+.amen {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   padding-top: 120px; 
+   min-height: 100vh; 
+}
+
+
+.amen img {
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   object-fit: cover;
+   display: block;
+   margin: 70px auto 0 auto;
+}
+
+
+  .image-text {
+ 
+   color: #333; 
+   font-weight: bold; 
+   text-align: center;
+   margin: 0;
+   margin-top: 20px;
+   
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+  
+ 
+
+
+  
+
+ 
+
+ .navbar{
+    background-image: url('UAsunset.jpg');
+    
+    background-size: cover;
+   background-position: center; 
+   position: fixed; 
+   width: 100%; 
+
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+    z-index: 999;
+ }
+ 
+ .navbar__container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    z-index: 1;
+    width:100%;
+    max-width:1300px;
+    margin: 0 auto;
+    padding: 20px 50px;
+ }
+ #navbar__logo{
+    background-color: #000000;
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: right;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family:  Medium ;
+    font-weight:bold;
+    size: 80px;
+    height: 150px;
+    padding: 100px 0;
+    text-shadow: 2px 2px 4px #cf82bc80; 
+
+}
+
+ .image-text{
+   align-items: top;
+   justify-content: center;
+   
+ }
+ .resume-download {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+   width: 100%;
+ }
+
+.resume-download a {
+   text-decoration: none;
+   font-size: 1.2rem;
+   color: #333;
+   font-weight: bold;
+   background: linear-gradient(120deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+   padding: 10px 20px;
+   border-radius: 20px;
+   display: inline-flex;
+   align-items: center;
+   gap: 10px; 
+   transition: all 0.3s ease;
+}
+
+.resume-download a:hover {
+   background: #fa76f3;
+   color: white;
+}
+
+.resume-download i {
+   font-size: 1.5rem;
+   color: #fa76f3;
+   transition: transform 0.3s;
+}
+
+.resume-download a:hover i {
+   transform: scale(1.2);
+   color: white;
+}
+
+
+
+ .fa-gem{
+    margin-right: 0.5rem;
+ }
+
+ .navbar__menu{
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   list-style: none;
+   padding: 0;
+   gap: 0px; 
+   position: absolute; 
+   left: 50%; 
+   transform: translateX(-50%);
+   border-radius: 50px;
+    
+    
+ }
+
+ .navbar__item{
+    height: 200px;
+ }
+
+ .navbar__links {
+   color: #000000;
+   background: linear-gradient(120deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   border-radius: 5%;
+   background-color: #ffffff;
+   width: 100px;
+   text-align: center; 
+   text-decoration: none;
+   
+   text-shadow: 2px 2px 4px rgba(20, 14, 20, 0.5); 
+   font-weight:200;
+   
+}
+
+#nav-right {
+   display: flex;
+   gap: 15px;
+   position: absolute;
+   top: 20px;
+   right: -200px;
+
+
+}
+      
+
+   
+
+ .navbar__btn{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+ }
+
+ .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background: #e9baf5;
+   
+ }
+ .navbar__links:hover{
+   background:#fa76f3;
+   transition: all 0.5s ease;
+ }
+ 
+
+ .button:hover{
+    background:  #fa76f3;
+    transition: all 0.3s ease;
+ }
+
+ 
+ .comments-icon {
+   font-size: 2rem;
+   margin: 0px 10px; 
+   color: #efc2ff; 
+   transition: transform 0.3s; 
+}
+
+
+
+ @media screen and (max-width: 960px){
+    .navbar__container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        max-width: 1300px;
+        padding:0;
+    }
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        
+        
+        }
+    }
